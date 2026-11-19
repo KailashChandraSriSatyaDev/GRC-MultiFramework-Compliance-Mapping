@@ -4,12 +4,7 @@
 ![Licence: pending, all rights reserved](https://img.shields.io/badge/licence-pending%20%E2%80%94%20all%20rights%20reserved-lightgrey)
 ![Output: candidates for human review](https://img.shields.io/badge/output-candidates%20for%20human%20review-orange)
 
-Research code from an M.Tech dissertation in cybersecurity. It ranks candidate controls for
-security-policy statements against ISO/IEC 27001:2022 and NIST SP 800-53 Rev. 5.2.0 using a
-Sentence-BERT encoder fine-tuned on ISO/IEC 27001 policy-control pairs. NIST mappings use this
-ISO-trained encoder against the NIST catalogue; the model was not fine-tuned on NIST-specific
-policy-control pairs. Each suggestion includes a similarity score, a heuristic review band and an
-audit-priority rank to help GRC auditors review a shortlist rather than an entire catalogue.
+This repository contains the implementation of a cybersecurity research work focused on the semantic mapping of security-policy statements to candidate controls in ISO/IEC 27001:2022 and NIST SP 800-53 Rev. 5.2.0. The system uses a Sentence-BERT encoder fine-tuned on ISO/IEC 27001 policy–control pairs to identify and rank relevant controls. For NIST SP 800-53, the same ISO-trained encoder is applied to the NIST control catalogue; however, the encoder has not been fine-tuned on NIST-specific policy–control pairs. Each candidate mapping includes a similarity score, a heuristic review band, and an audit-priority ranking to help GRC auditors prioritise candidates for human review.
 
 **Every output is a candidate for human review. Nothing in this repository certifies compliance.**
 
