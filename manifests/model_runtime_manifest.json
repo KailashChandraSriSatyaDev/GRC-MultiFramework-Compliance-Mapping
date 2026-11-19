@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "model_name": "finetuned_sbert_PRODUCTION",
+  "description": "Runtime files required to load the research model, with expected sizes and SHA-256 hashes. The model files themselves are not distributed with this repository.",
+  "files": [
+    {
+      "path": "1_Pooling/config.json",
+      "size": 321,
+      "sha256": "b4105bf48c5257a542a7e1968cef220b3ecd49ae24943143279650c4ac6e30a0"
+    },
+    {
+      "path": "config.json",
+      "size": 774,
+      "sha256": "cf566f0a2e73d887c44858fa7ebc28d87dfef1d52ebd48cc0e1c462ca7ccf465"
+    },
+    {
+      "path": "config_sentence_transformers.json",
+      "size": 294,
+      "sha256": "55114feb391e1230474fcdfdf05ff629774e558da8ac793044a9063d092c4070"
+    },
+    {
+      "path": "model.safetensors",
+      "size": 90864176,
+      "sha256": "c7c902984b4b5a837fd006dc8cce2270fa2d5287bb1d813a868f0cf8d5384894"
+    },
+    {
+      "path": "modules.json",
+      "size": 368,
+      "sha256": "e7989e94b5b809d895a9521b708312c1ccd333e183effebaf3838908da2acd53"
+    },
+    {
+      "path": "sentence_bert_config.json",
+      "size": 60,
+      "sha256": "5a78a8637a4c986a89b5e9b3ce4af84b94b1dfeb9f1dfb09c448182a9d7ca9ab"
+    },
+    {
+      "path": "tokenizer.json",
+      "size": 711649,
+      "sha256": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c"
+    },
+    {
+      "path": "tokenizer_config.json",
+      "size": 588,
+      "sha256": "6d5b6b07eeacce3dd24681a5575b404f9b92d0984f6d7e056dfc6b12924d177f"
+    }
+  ]
+}

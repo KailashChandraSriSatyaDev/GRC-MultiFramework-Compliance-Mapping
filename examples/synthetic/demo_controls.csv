@@ -1,0 +1,9 @@
+Control_ID,Control_Text
+DEMO-01,Staff sign in with a personal account and a second factor before reaching shared systems.
+DEMO-02,Laptops and phones lock automatically after a short idle period and keep their disks encrypted.
+DEMO-03,Nightly copies of important files are kept in a separate location and restored as a test every quarter.
+DEMO-04,Suspected security incidents are reported to a named contact and handled by a written playbook.
+DEMO-05,New suppliers are reviewed before they receive company data and are reviewed again every year.
+DEMO-06,Office doors open only with a badge and visitors are signed in and escorted.
+DEMO-07,Software changes are reviewed by a second developer and tested before release.
+DEMO-08,Employees complete a short awareness course when they join and once a year after that.

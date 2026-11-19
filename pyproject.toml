@@ -1,0 +1,27 @@
+# Metadata and pytest configuration only.
+# This project is NOT installed: run it from the repository root with
+#   PYTHONPATH=src python -m grc_mapper ...
+# The runtime environment is pinned by requirements/grc-mvp.lock.txt.
+
+[project]
+name = "grc-nlp-iso27001"
+version = "0.1.0"
+description = "Research pipeline: candidate mapping of policy statements to ISO/IEC 27001:2022 Annex A controls with a fine-tuned sentence encoder, snapshot dissimilarity (DI) and a heuristic audit-priority score (APS)."
+readme = "README.md"
+requires-python = ">=3.13"
+classifiers = [
+    "Private :: Do Not Upload",
+    "Programming Language :: Python :: 3.13",
+]
+# Licence: pending confirmation of university and co-author permissions.
+
+[tool.pytest.ini_options]
+minversion = "9.0"
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider -ra --strict-markers"
+markers = [
+    "unit: no model and no private data required",
+    "integration: requires the locally verified production model (OK_FULL)",
+    "regression: requires local research assets and regression fixtures",
+]

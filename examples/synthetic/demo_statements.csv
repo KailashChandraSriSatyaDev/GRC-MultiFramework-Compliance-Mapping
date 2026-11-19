@@ -1,0 +1,13 @@
+Statement_ID,Statement_Text
+DS-001,Every employee uses two-step sign-in for email and the file server.
+DS-002,Unattended laptops must lock their screens within five minutes.
+DS-003,The finance share is copied off-site every night.
+DS-004,Anyone who notices a phishing message forwards it to the help desk at once.
+DS-005,The cloud payroll vendor completed our supplier questionnaire before onboarding.
+DS-006,Guests wait at reception until a host collects them.
+DS-007,Pull requests need one approving review before they are merged.
+DS-008,New starters finish the security basics module in their first week.
+DS-009,Restore drills for the customer database are run every three months.
+DS-010,Mobile phones issued by the company have full-disk encryption switched on.
+DS-011,The canteen menu changes every Monday.
+DS-012,Release candidates go through automated tests on a staging server.

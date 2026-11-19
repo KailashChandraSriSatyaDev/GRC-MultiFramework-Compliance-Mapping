@@ -1,0 +1,50 @@
+# grc-nlp-iso27001 public repository: ignore rules (Blueprint rev 3, section 6.2).
+# .gitignore is a second line of defence. tools/check_publishable.py scans every
+# file on disk regardless of these rules.
+
+# local-only assets and outputs
+local_assets/
+local_outputs/
+local_config/
+outputs/
+runs/
+config/local.toml
+*.local.toml
+!config/example.local.toml
+.env
+.env.*
+
+# model artefacts
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+*.ckpt
+**/finetuned_sbert_*/
+**/1_Pooling/
+**/2_Normalize/
+
+# data and notebooks
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.parquet
+*.jsonl
+*.ipynb
+!examples/synthetic/*.csv
+
+# python and tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# logs
+logs/
+*.log

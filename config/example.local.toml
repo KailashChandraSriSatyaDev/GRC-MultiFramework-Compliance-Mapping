@@ -1,0 +1,30 @@
+# Template for the local configuration file.
+# Copy it OUTSIDE the repository, fill in real paths, and point GRC_CONFIG at the copy.
+# Resolution order: CLI flags > environment variables > this file > built-in non-path defaults.
+# Paths have no defaults. A missing required path is a configuration error.
+
+[paths]
+model_dir               = "<MODEL_DIR>"                 # directory of the sentence-transformers model
+model_manifest          = "<REPO>/manifests/model_runtime_manifest.json"
+model_full_manifest     = "<LOCAL_MANIFEST_DIR>/model_full_manifest.json"
+controls_csv            = "<CONTROLS_CSV>"
+policies_csv            = "<POLICIES_CSV>"
+regression_dir          = "<REGRESSION_DIR>"
+regression_expectations = "<LOCAL_MANIFEST_DIR>/regression_expectations.json"
+restricted_hashes       = "<LOCAL_MANIFEST_DIR>/restricted_hashes.json"
+output_dir              = "<OUTPUT_DIR>"                # must be outside the repository
+
+[runtime]
+device     = "cpu"
+batch_size = 32
+
+[columns]
+control_id     = "Control_ID"
+control_text   = "Control_Text"
+statement_id   = "Policy_ID"
+statement_text = "Policy_Text"
+label          = "True_Control_ID"
+
+[scanner]
+public_root     = "<REPO>"
+identity_tokens = []          # local identity strings the scanner must never find in public files
