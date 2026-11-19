@@ -6,7 +6,7 @@
 [project]
 name = "grc-nlp-iso27001"
 version = "0.1.0"
-description = "Research pipeline: candidate mapping of policy statements to ISO/IEC 27001:2022 Annex A controls with a fine-tuned sentence encoder, snapshot dissimilarity (DI) and a heuristic audit-priority score (APS)."
+description = "Research pipeline: candidate mapping of security-policy statements to ISO/IEC 27001:2022 and NIST SP 800-53 Rev. 5.2.0 controls with an ISO-trained Sentence-BERT encoder, heuristic review bands, snapshot dissimilarity (DI) and a heuristic audit-priority score (APS), for human review."
 readme = "README.md"
 requires-python = ">=3.13"
 classifiers = [
